@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var numeroFisso = 10;
+  var numeroFisso = 4;
 
   $('.square').click(function () {
     $.ajax(
@@ -15,11 +15,11 @@ $(document).ready(function () {
       }
     );
     $(this).text(numeroFisso);
-    if (numeroFisso <= 10) {
+    if (numeroFisso <= 5) {
       $(this).addClass('yellow');
     }
     else {
-      $(this).addClass('red');
+      $(this).addClass('green');
     }
   });
 
